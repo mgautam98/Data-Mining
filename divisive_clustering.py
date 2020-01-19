@@ -47,16 +47,14 @@ class Graph():
   
         return self.printMST(parent) 
 
-def Cluster(n, k):
+def divisive_cluster(n, k):
   if(k>n):
     print("Enter valid value for K!")
     return 
   # ---------------------------------
 
   plt.plot([10000], [10000])
-  print("Please click")
   inp = plt.ginput(n)
-  print("clicked", inp)
 
   X = []
   y = []
@@ -119,4 +117,4 @@ def Cluster(n, k):
 
 
 
-Cluster(20, 3)
+divisive_cluster(20, 4)
